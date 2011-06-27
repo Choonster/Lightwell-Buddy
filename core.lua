@@ -8,9 +8,6 @@ local PLAYER_NAME = UnitName("player")
 local PLAYER_GUID = UnitGUID("player")
 local LIGHTWELL_SPELLID = 724
 local RENEW_SPELLID = 7001
-local Lightwell_GUID;
-
-local isLightwellDown = false
 
 local message;
 

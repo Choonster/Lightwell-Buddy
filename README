@@ -3,3 +3,5 @@ http://www.curse.com/content/AddonInstallGuide.aspx
 http://www.wowinterface.com/forums/faq.php?faq=install#faq_howto_install
 
 To configure the AddOn, simply edit the core.lua file (in any text editor) as instructed.
+
+Thanks to Hershe of Silver Hand US for the concept and for testing and fixing my initial version.

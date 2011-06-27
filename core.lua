@@ -37,13 +37,8 @@ To use the \ (backslash) or | (vertical bar) characters in the phrase, you may n
 }
 
 function LWB_events:COMBAT_LOG_EVENT_UNFILTERED(timestamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, destGUID, destName, destFlags, spellId, spellName, spellSchool, ...)
-  if event == "SPELL_CAST_SUCCESS" and sourceGUID == PLAYER_GUID and spellId == LIGHTWELL_SPELLID then
-    isLightwellDown = true
-    Lightwell_GUID = destGUID
-  
-  elseif event == ("UNIT_DESTROYED" or "UNIT_DIED") and destGUID == Lightwell_GUID then
-    isLightwellDown = false
-  elseif event == "SPELL_AURA_APPLIED" and sourceGUID == Lightwell_GUID and spellId == RENEW_SPELLID and isLightwellDown then
+
+  if event == "SPELL_AURA_APPLIED" and sourceGUID == PLAYER_GUID and spellId == RENEW_SPELLID then
     message = nil --reset the message
     
     repeat --keep trying to pick a random message until we get one

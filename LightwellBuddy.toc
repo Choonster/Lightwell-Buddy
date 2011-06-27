@@ -1,0 +1,6 @@
+## Title: Lightwell Buddy
+## Interface: 40100
+## Notes: Says a random message when someone uses your Lightwell.
+## Version: 0.01
+
+core.lua
